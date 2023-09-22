@@ -26,7 +26,8 @@ public class FirstGrade {
         for(int i = 1; i < n - 1; i++){
             for(int j = 0; j <= 20; j++){
                 if(dp[i - 1][j] > 0L){
-                    if(j + nums[i] <= 20) dp[i][j + nums[i]] += dp[i - 1][j];
+                    if(j + nums[i] <=
+                            20) dp[i][j + nums[i]] += dp[i - 1][j];
                     if(j - nums[i] >= 0) dp[i][j - nums[i]] += dp[i - 1][j];
                 }
             }
